@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "vite",
+    "lint": "eslint .",
     "build": "vite build",
     "preview": "vite preview",
     "test": "echo \"No tests specified\""

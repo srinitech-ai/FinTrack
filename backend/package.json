@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
-    "test": "echo \"No tests\""
+    "test": "echo \"No tests\"",
+    "lint": "eslint ."
   },
   "dependencies": {
     "cors": "^2.8.5",
