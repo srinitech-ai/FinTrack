@@ -5,6 +5,13 @@ project consists of a React frontend, a Node.js backend and a Python service
 for generating insights.
 
 ## Local Setup
+Copy `.env.example` to `.env` and adjust values for your environment.
+
+### Root dependencies
+Install Husky and lint-staged hooks:
+```bash
+npm install
+```
 
 ### Frontend
 ```bash
@@ -17,7 +24,7 @@ npm run dev
 ```bash
 cd backend
 npm install
-npm start
+npm run dev
 ```
 
 ### AI Service
