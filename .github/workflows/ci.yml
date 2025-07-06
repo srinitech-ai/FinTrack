@@ -22,7 +22,7 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
-        run: npm ci
+        run: npm i
 
       - name: Run lint
         run: npm run lint
@@ -46,7 +46,7 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
-        run: npm ci
+        run: npm i
 
       - name: Lint backend
         run: npm run lint
