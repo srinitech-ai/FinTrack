@@ -1,8 +1,8 @@
 import 'dotenv/config';
 import express from 'express';
 import cors from 'cors';
-import authRoutes from './routes/auth.js';
-import transactionRoutes from './routes/transactions.js';
+import authRoutes from './routes/auth';
+import transactionRoutes from './routes/transactions';
 
 const app = express();
 app.use(cors());
