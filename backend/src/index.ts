@@ -11,8 +11,16 @@ app.use(express.json());
 app.use('/api/auth', authRoutes);
 app.use('/api/transactions', transactionRoutes);
 
-app.get('/',(req,res)=>{res.json({message:'welcome'})})
-const requiredEnv = ['DB_HOST', 'DB_USER', 'DB_PASSWORD', 'DB_NAME', 'JWT_SECRET'];
+app.get('/', (req, res) => {
+  res.json({ message: 'welcome' });
+});
+const requiredEnv = [
+  'DB_HOST',
+  'DB_USER',
+  'DB_PASSWORD',
+  'DB_NAME',
+  'JWT_SECRET',
+];
 requiredEnv.forEach((v) => {
   if (!process.env[v]) {
     console.warn(`Missing environment variable ${v}`);
@@ -23,4 +31,3 @@ const port = process.env.PORT || 3001;
 app.listen(port, () => {
   console.log(`Backend running on port ${port}`);
 });
-
