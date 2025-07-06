@@ -1,12 +1,12 @@
 import { Request, Response } from 'express';
 import { validationResult } from 'express-validator';
-import { AuthRequest } from '../middleware/auth.js';
+import { AuthRequest } from '../middleware/auth';
 import {
   addTransaction,
   getTransactionsService,
   getSummary,
   getMonthlyBreakdown,
-} from '../services/transactionService.js';
+} from '../services/transactionService';
 
 export async function createTransactionHandler(req: AuthRequest, res: Response) {
   const errors = validationResult(req);

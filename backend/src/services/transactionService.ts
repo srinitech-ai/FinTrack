@@ -1,12 +1,12 @@
-import { categoryExists } from '../models/category.js';
-import { tagExists } from '../models/tag.js';
+import { categoryExists } from '../models/category';
+import { tagExists } from '../models/tag';
 import {
   Transaction,
   createTransaction,
   listTransactions,
   getSummary,
   getMonthlyBreakdown,
-} from '../models/transaction.js';
+} from '../models/transaction';
 
 export async function addTransaction(userId: number, data: Omit<Transaction, 'id' | 'user_id'>) {
   if (data.category_id) {
